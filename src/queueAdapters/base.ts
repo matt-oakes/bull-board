@@ -48,5 +48,7 @@ export abstract class BaseAdapter implements QueueAdapter {
 
   public abstract getName(): string
 
+  public abstract getLogs(id: string): Promise<string[]>
+
   public abstract getClient(): Promise<Redis.Redis>
 }

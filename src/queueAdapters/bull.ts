@@ -29,6 +29,10 @@ export class BullAdapter extends BaseAdapter implements QueueAdapter {
     return this.queue.getJob(id)
   }
 
+  public getLogs(id: string): Promise<string[]> {
+    return this.queue.getJobLogs(id).then(({ logs }) => logs)
+  }
+
   public getJobs(
     jobStatuses: JobStatus[],
     start?: number,
