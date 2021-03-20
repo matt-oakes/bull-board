@@ -1,7 +1,7 @@
 {
-  "name": "bull-board",
+  "name": "@mattoakes/bull-board",
   "description": "Bull queue UI for inspecting jobs",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "keywords": [
     "bull",
     "redis",
@@ -40,7 +40,6 @@
     "start:dev": "yarn start:dev:docker && yarn start:dev:server",
     "test": "yarn ts-node src/dockest",
     "snyk-protect": "snyk protect",
-    "prepare": "yarn run snyk-protect",
     "release": "release-it"
   },
   "dependencies": {
